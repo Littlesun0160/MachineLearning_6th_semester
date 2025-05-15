@@ -64,7 +64,7 @@ plt.legend()
 plt.show()
 
 # Таблица с предсказаниями
-results = pd.DataFrame({'Actual': y_test,'Scikit-Learn Predicted': sklearn_predictions,
-        'My Predicted': my_predictions})
+results = pd.DataFrame({'Исходные данные': y_test,'Scikit-Learn предсказание': sklearn_predictions,
+        'Мое предсказание': my_predictions})
 print("\nТаблица предсказаний:")
 print(results)
