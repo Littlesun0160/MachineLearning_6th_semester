@@ -2,6 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
+#Результаты работы кода приведены в данной папке в формате PNG
 def read_data_from_file(filepath):
     try:
         data = pd.read_csv(filepath)
