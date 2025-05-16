@@ -6,12 +6,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
 
-try:
-    df = pd.read_csv('Titanic.csv')  # Убедитесь, что файл titanic.csv находится в той же директории
-except FileNotFoundError:
-    print("Ошибка: Файл не найден")
-    exit()
-
+df = pd.read_csv('Titanic.csv')
 #1) Удаляем строки с пропусками
 initial_data_len = len(df)
 df.dropna(inplace=True)
