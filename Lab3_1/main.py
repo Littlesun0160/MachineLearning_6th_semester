@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt  # Используем plt вместо plot для краткости
+import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.datasets import load_iris, make_classification
 from sklearn.model_selection import train_test_split
@@ -37,7 +37,7 @@ plt.tight_layout()
 #Вывод всего датасета
 sns.pairplot(df, hue='target', palette='husl')
 
-#Беремо 2 датасета: setosa и versicolor \ versicolor и virginica
+#Берем 2 датасета: setosa и versicolor \ versicolor и virginica
 df1 = df[df['target'].isin([0, 1])].copy()
 df2 = df[df['target'].isin([1, 2])].copy()
 
